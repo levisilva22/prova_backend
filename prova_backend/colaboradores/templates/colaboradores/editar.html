@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Colaborador</title>
+</head>
+<body>
+    <h1>Editar Colaborador</h1>
+    <form method="post">
+        {% csrf_token %}  
+        <button type="submit">Salvar Alterações</button>
+    </form>
+    <a href="{% url 'listar' %}">Voltar para a lista</a>
+</body>
+</html>
