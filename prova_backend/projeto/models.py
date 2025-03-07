@@ -17,5 +17,5 @@ class Projeto(models.Model):
     qnt_membros = models.IntegerField()
     equipe = models.ForeignKey(Colaborador, on_delete=models.CASCADE)
 
-    def __strs__(self):
+    def __str__(self):
         return self.projeto
